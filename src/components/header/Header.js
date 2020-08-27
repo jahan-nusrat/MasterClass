@@ -1,10 +1,9 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import NavCart from '.././cart/NavCart';
 import logo from '../header/logo.png';
 import './Header.css';
 
-function Header () {
+function Header ({ cart }) {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-white">
 			<div className="container">
@@ -27,15 +26,10 @@ function Header () {
 					<input className="form-control mr-sm-2" />
 					<button className="btn btn-outline-success my-2 my-sm-0">Search</button>
 				</form>
-				<div className="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul className="navbar-nav ml-auto">
-						<li className="nav-item">
-							<a className="nav-link" href="/cart">
-								<FontAwesomeIcon icon={faShoppingCart} style={{ color: 'red' }} />
-							</a>
-						</li>
-					</ul>
-				</div>
+
+				<ul className="navbar-nav ml-auto cart">
+					<NavCart cart={cart} />
+				</ul>
 			</div>
 		</nav>
 	);

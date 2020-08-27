@@ -6,7 +6,9 @@ import Course from './Courses/Course';
 
 class App extends Component {
 	state = {
-		courses : []
+		courses  : [],
+		selected : 0,
+		cart     : []
 	};
 
 	componentDidMount () {
@@ -15,12 +17,19 @@ class App extends Component {
 		});
 	}
 
+	selectCourse = (item) => {
+		this.setState({
+			selected : item,
+			cart     : [ ...this.state.cart, item ]
+		});
+	};
+
 	render () {
 		return (
 			<div>
-				<Header />
+				<Header cart={this.state.cart} />
 				<div className="container mt-5">
-					<Course courses={this.state.courses} />
+					<Course courses={this.state.courses} selectCourse={this.selectCourse} />
 				</div>
 			</div>
 		);

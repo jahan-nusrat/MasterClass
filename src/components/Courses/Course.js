@@ -1,9 +1,9 @@
 import React from 'react';
 import CourseDetails from './CourseDetails';
 
-function Course ({ courses }) {
+function Course ({ courses, selectCourse }) {
 	let totalCourses = courses.map((course) => {
-		return <CourseDetails key={course.id} course={course} />;
+		return <CourseDetails key={course.id} course={course} selectCourse={selectCourse} />;
 	});
 	return (
 		<div className="header-content">

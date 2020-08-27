@@ -1,8 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import Button from './Button';
 
-function CourseDetails ({ course }) {
+function CourseDetails ({ course, selectCourse }) {
 	let btn = '';
 	if (course.bestSeller) {
 		btn = 'Bestseller';
@@ -19,10 +20,7 @@ function CourseDetails ({ course }) {
 				<p>{rating}</p>
 				<span>{course.enrolled} students enrolled</span>
 				<p>${course.price} </p>
-
-				<button className="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="add to cart">
-					Buy Course
-				</button>
+				<Button selectCourse={selectCourse} course={course} />
 				<span className="bestseller ml-5">{btn}</span>
 			</div>
 		</div>
