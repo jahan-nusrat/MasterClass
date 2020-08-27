@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import logo from '../header/logo.png';
 import './Header.css';
 
@@ -26,15 +28,10 @@ function Header () {
 					<button className="btn btn-outline-success my-2 my-sm-0">Search</button>
 				</form>
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul className="navbar-nav mr-auto">
-						<li className="nav-item active">
-							<a className="nav-link" href="/home">
-								Home <span className="sr-only">(current)</span>
-							</a>
-						</li>
+					<ul className="navbar-nav ml-auto">
 						<li className="nav-item">
-							<a className="nav-link" href="/link">
-								Link
+							<a className="nav-link" href="/cart">
+								<FontAwesomeIcon icon={faShoppingCart} style={{ color: 'red' }} />
 							</a>
 						</li>
 					</ul>

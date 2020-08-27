@@ -19,7 +19,10 @@ function CourseDetails ({ course }) {
 				<p>{rating}</p>
 				<span>{course.enrolled} students enrolled</span>
 				<p>${course.price} </p>
-				<button className="btn btn-warning">Buy Course</button>
+
+				<button className="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="add to cart">
+					Buy Course
+				</button>
 				<span className="bestseller ml-5">{btn}</span>
 			</div>
 		</div>
