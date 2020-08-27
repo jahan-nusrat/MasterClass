@@ -7,7 +7,7 @@ function Course ({ courses, selectCourse }) {
 	});
 	return (
 		<div className="header-content">
-			<h4>The World's Largest Selection of Courses</h4>
+			<h2>The World's Largest Selection of Courses</h2>
 			<p className="text-secondary">
 				Choose from {courses.length} online video courses with new additions published every month
 			</p>
