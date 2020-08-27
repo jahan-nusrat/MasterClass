@@ -16,16 +16,28 @@ body {
 .card-body p {
     padding: 0 !important;
     margin-bottom: 0.4rem;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .card-body {
-    height: 210px;
+    height: 230px;
     position: relative;
 }
 
 .bestseller {
     position: absolute;
-    right: 0;
+    right: 5px;
     top: 0;
+}
+
+.card-body button {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.card-body .price {
+    font-weight: bold;
+    font-size: 1.1rem;
 }

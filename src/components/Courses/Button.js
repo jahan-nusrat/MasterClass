@@ -8,7 +8,7 @@ function Button ({ course, selectCourse }) {
 	return (
 		<button
 			onClick={clickHandler}
-			className="btn btn-warning"
+			className="btn btn-danger"
 			data-toggle="tooltip"
 			data-placement="bottom"
 			title="add to cart"

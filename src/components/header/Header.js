@@ -9,7 +9,7 @@ function Header ({ cart }) {
 			<div className="container">
 				<a className="navbar-brand" href="/home">
 					<img className="img-fluid" src={logo} alt="" />
-					<span>E-Class</span>
+					<span className="font-weight-bold ml-5">E-Class</span>
 				</a>
 				<button
 					className="navbar-toggler"
@@ -24,7 +24,7 @@ function Header ({ cart }) {
 				</button>
 				<form className="form-inline my-2 my-lg-0">
 					<input className="form-control mr-sm-2" />
-					<button className="btn btn-outline-success my-2 my-sm-0">Search</button>
+					<button className="btn btn-outline-danger my-2 my-sm-0">Search</button>
 				</form>
 				<ul className="navbar-nav ml-auto cart">
 					<NavCart cart={cart} />
