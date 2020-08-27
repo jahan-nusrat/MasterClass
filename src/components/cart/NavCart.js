@@ -9,7 +9,7 @@ function NavCart ({ cart }) {
 		<div>
 			<li className="ui big red label" data-toggle="modal" data-target="#staticBackdrop">
 				<i className="shopping cart icon" /> {cart.length}
-				<a className="detail">View Cart</a>
+				<span className="detail">View Cart</span>
 			</li>
 			<div
 				className="modal fade"
