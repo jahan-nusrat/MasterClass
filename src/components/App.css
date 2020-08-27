@@ -1,0 +1,20 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-body .bestseller {
+    text-align: center;
+    width: 100px;
+    background-color: rgba(235, 197, 72, 0.726);
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: 1rem;
+}
+
+.card-body p {
+    padding: 0 !important;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
