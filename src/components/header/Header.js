@@ -26,7 +26,6 @@ function Header ({ cart }) {
 					<input className="form-control mr-sm-2" />
 					<button className="btn btn-outline-success my-2 my-sm-0">Search</button>
 				</form>
-
 				<ul className="navbar-nav ml-auto cart">
 					<NavCart cart={cart} />
 				</ul>

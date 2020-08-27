@@ -21,7 +21,7 @@ function CourseDetails ({ course, selectCourse }) {
 				<span>{course.enrolled} students enrolled</span>
 				<p>${course.price} </p>
 				<Button selectCourse={selectCourse} course={course} />
-				<span className="bestseller ml-5">{btn}</span>
+				<span className="bestseller mt-2">{btn}</span>
 			</div>
 		</div>
 	);
